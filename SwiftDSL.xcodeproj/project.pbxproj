@@ -13,7 +13,21 @@
 		BE7712422A6FB7330061187E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE7712402A6FB7330061187E /* Main.storyboard */; };
 		BE7712442A6FB7340061187E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE7712432A6FB7340061187E /* Assets.xcassets */; };
 		BE7712472A6FB7340061187E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE7712452A6FB7340061187E /* LaunchScreen.storyboard */; };
+		BE77124F2A6FB8D60061187E /* SwiftDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE77124E2A6FB8D60061187E /* SwiftDSL.swift */; };
+		BE77125B2A6FD2DF0061187E /* SwiftDSLTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE77125A2A6FD2DF0061187E /* SwiftDSLTests.m */; };
+		BE77127D2A6FD3C40061187E /* SwiftDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE77124E2A6FB8D60061187E /* SwiftDSL.swift */; };
+		BE77127F2A6FD7D60061187E /* SwiftAPI-Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE77127E2A6FD7D60061187E /* SwiftAPI-Test.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE77125C2A6FD2DF0061187E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE77122F2A6FB7330061187E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE7712362A6FB7330061187E;
+			remoteInfo = SwiftDSL;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		BE7712372A6FB7330061187E /* SwiftDSL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDSL.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +38,22 @@
 		BE7712432A6FB7340061187E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BE7712462A6FB7340061187E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE7712482A6FB7340061187E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE77124E2A6FB8D60061187E /* SwiftDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftDSL.swift; sourceTree = "<group>"; };
+		BE7712502A6FBA070061187E /* SwiftDSL-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftDSL-Bridging-Header.h"; sourceTree = "<group>"; };
+		BE7712582A6FD2DF0061187E /* SwiftDSLTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftDSLTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE77125A2A6FD2DF0061187E /* SwiftDSLTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwiftDSLTests.m; sourceTree = "<group>"; };
+		BE77127E2A6FD7D60061187E /* SwiftAPI-Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftAPI-Test.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BE7712342A6FB7330061187E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE7712552A6FD2DF0061187E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				BE7712392A6FB7330061187E /* SwiftDSL */,
+				BE7712592A6FD2DF0061187E /* SwiftDSLTests */,
 				BE7712382A6FB7330061187E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				BE7712372A6FB7330061187E /* SwiftDSL.app */,
+				BE7712582A6FD2DF0061187E /* SwiftDSLTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,12 +87,23 @@
 				BE77123A2A6FB7330061187E /* AppDelegate.swift */,
 				BE77123C2A6FB7330061187E /* SceneDelegate.swift */,
 				BE77123E2A6FB7330061187E /* ViewController.swift */,
+				BE77124E2A6FB8D60061187E /* SwiftDSL.swift */,
 				BE7712402A6FB7330061187E /* Main.storyboard */,
 				BE7712432A6FB7340061187E /* Assets.xcassets */,
 				BE7712452A6FB7340061187E /* LaunchScreen.storyboard */,
 				BE7712482A6FB7340061187E /* Info.plist */,
+				BE7712502A6FBA070061187E /* SwiftDSL-Bridging-Header.h */,
 			);
 			path = SwiftDSL;
+			sourceTree = "<group>";
+		};
+		BE7712592A6FD2DF0061187E /* SwiftDSLTests */ = {
+			isa = PBXGroup;
+			children = (
+				BE77125A2A6FD2DF0061187E /* SwiftDSLTests.m */,
+				BE77127E2A6FD7D60061187E /* SwiftAPI-Test.swift */,
+			);
+			path = SwiftDSLTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +126,24 @@
 			productReference = BE7712372A6FB7330061187E /* SwiftDSL.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BE7712572A6FD2DF0061187E /* SwiftDSLTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE77125E2A6FD2DF0061187E /* Build configuration list for PBXNativeTarget "SwiftDSLTests" */;
+			buildPhases = (
+				BE7712542A6FD2DF0061187E /* Sources */,
+				BE7712552A6FD2DF0061187E /* Frameworks */,
+				BE7712562A6FD2DF0061187E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE77125D2A6FD2DF0061187E /* PBXTargetDependency */,
+			);
+			name = SwiftDSLTests;
+			productName = SwiftDSLTests;
+			productReference = BE7712582A6FD2DF0061187E /* SwiftDSLTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +156,11 @@
 				TargetAttributes = {
 					BE7712362A6FB7330061187E = {
 						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
+					};
+					BE7712572A6FD2DF0061187E = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = BE7712362A6FB7330061187E;
 					};
 				};
 			};
@@ -116,6 +178,7 @@
 			projectRoot = "";
 			targets = (
 				BE7712362A6FB7330061187E /* SwiftDSL */,
+				BE7712572A6FD2DF0061187E /* SwiftDSLTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +194,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BE7712562A6FD2DF0061187E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -139,12 +209,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE77123F2A6FB7330061187E /* ViewController.swift in Sources */,
+				BE77124F2A6FB8D60061187E /* SwiftDSL.swift in Sources */,
 				BE77123B2A6FB7330061187E /* AppDelegate.swift in Sources */,
 				BE77123D2A6FB7330061187E /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BE7712542A6FD2DF0061187E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE77127F2A6FD7D60061187E /* SwiftAPI-Test.swift in Sources */,
+				BE77125B2A6FD2DF0061187E /* SwiftDSLTests.m in Sources */,
+				BE77127D2A6FD3C40061187E /* SwiftDSL.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE77125D2A6FD2DF0061187E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE7712362A6FB7330061187E /* SwiftDSL */;
+			targetProxy = BE77125C2A6FD2DF0061187E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BE7712402A6FB7330061187E /* Main.storyboard */ = {
@@ -285,6 +374,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8544FYD927;
@@ -303,6 +393,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.liangguanghui.SwiftDSL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftDSL/SwiftDSL-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -313,6 +405,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8544FYD927;
@@ -331,8 +424,47 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.liangguanghui.SwiftDSL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftDSL/SwiftDSL-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BE77125F2A6FD2DF0061187E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8544FYD927;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liangguanghui.SwiftDSLTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftDSL.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftDSL";
+			};
+			name = Debug;
+		};
+		BE7712602A6FD2DF0061187E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8544FYD927;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.liangguanghui.SwiftDSLTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SwiftDSL.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SwiftDSL";
 			};
 			name = Release;
 		};
@@ -353,6 +485,15 @@
 			buildConfigurations = (
 				BE77124C2A6FB7340061187E /* Debug */,
 				BE77124D2A6FB7340061187E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE77125E2A6FD2DF0061187E /* Build configuration list for PBXNativeTarget "SwiftDSLTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE77125F2A6FD2DF0061187E /* Debug */,
+				BE7712602A6FD2DF0061187E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
