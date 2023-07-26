@@ -42,6 +42,7 @@ public extension SwiftDSL {
 }
 
 // MARK: - For Objc
+@available(swift, obsoleted: 1.0)
 public extension SwiftDSL {
     @objc(A)
     var dsl_A: (() -> SwiftDSL) {
